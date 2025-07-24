@@ -1,3 +1,24 @@
+Skip to content
+Navigation Menu
+martinez01099
+prueba-en-clase
+
+Type / to search
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+.github/workflows/dotnet.yml
+Create dotnet.yml #1
+Jobs
+Run details
+Workflow file for this run
+.github/workflows/dotnet.yml at 49da566
 # This workflow will deploy SQL Server Database Project to Azure SQL Database
 #
 # To configure this workflow:
@@ -36,7 +57,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Setup MSBuild
-        uses: Vehiculo.API
+        uses:microsoft/setup-msbuild@v2
 
       - name: Setup NuGet
         uses: NuGet/setup-nuget@v1
@@ -74,3 +95,4 @@ jobs:
           Write-Host "Target Server: ${{ env.AZURE_SQL_SERVER }}"
           Write-Host "Target Database: ${{ env.AZURE_SQL_DATABASE }}"
         shell: powershell
+Create dotnet.yml · martinez01099/prueba-en-clase@49da566 
